@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark py-2 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-warning d-flex align-items-center" routerLink="/home">
+      <img
+        src="e-commerce.png"
+        alt="logo"
+        class="rounded-circle border border-warning me-2"
+        width="40"
+        height="40"
+      />
+      E-Commerce
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item me-5">
+          <a class="nav-link text-warning" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item ml-3 ">
+          <a class="nav-link text-warning" routerLink="/products" routerLinkActive="active">Products</a>
+        </li>
+        
+      </ul>
+
+      <div class="d-flex align-items-center">
+        <a routerLink="/cart" class="btn btn-outline-light position-relative me-3">
+          <i class="bi bi-cart text-warning"></i>
+          <span *ngIf="cartLength > 0" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {{ cartLength }}
+          </span>
+        </a>
+
+        <!-- User Menu -->
+        <div class="dropdown">
+          <button 
+            #userDropdown
+            type="button" 
+            class="btn btn-outline-warning d-flex align-items-center gap-2"
+            (click)="toggleDropdown($event)"
+          >
+            <img
+              src="https://icons.veryicon.com/png/o/miscellaneous/cust-background-icon/default-avatar-3.png"
+              alt="avatar"
+              class="rounded-circle"
+              width="32"
+              height="32"
+            />
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+            <li>
+              <a class="dropdown-item d-flex align-items-center gap-2" href="#" (click)="logout(); $event.preventDefault()">
+                <i class="bi bi-box-arrow-right"></i>
+                Logout
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center gap-2" routerLink="/profile">
+                <i class="bi bi-person"></i>
+                Profail
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,85 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header text-center">
+          <h4 class="mb-0">Shopping Cart</h4>
+        </div>
+        <div class="card-body">
+          @if (cartItems.length === 0) {
+            <div class="empty-cart">
+              <h5>Your Cart is Empty</h5>
+              <p>Start shopping and add some items to your cart</p>
+            </div>
+          } @else {
+            <div class="table-responsive">
+              <table class="table align-middle text-center">
+                <thead>
+                  <tr>
+                    <th class="text-center">Product</th>
+                    <th class="text-center">Price</th>
+                    <th class="text-center">Quantity</th>
+                    <th class="text-center">Total</th>
+                    <th class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (item of cartItems; track item.id) {
+                    <tr>
+                      <td>
+                        <div class="product-info">
+                          <img [src]="item.product.thumbnail" alt="{{item.product.title}}" class="product-image">
+                          <div class="product-details">
+                            <h6>{{item.product.title | cuttext}}</h6>
+                            <small>{{item.product.category}}</small>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="price">{{item.product.price | currency:'USD '}}</td>
+                      <td>
+                        <div class="quantity-control">
+                          <button class="btn btn-outline-secondary" type="button" (click)="updateQuantity(item, item.quantity - 1)">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input type="number" class="form-control" [value]="item.quantity" (change)="handleQuantityChange($event, item)">
+                          <button class="btn btn-outline-secondary" type="button" (click)="updateQuantity(item, item.quantity + 1)">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="price">{{item.product.price * item.quantity | currency:'USD '}}</td>
+                      <td>
+                        <button class="btn btn-remove" (click)="removeItem(item.id)">
+                          <i class="fas fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  }
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3" class="text-center">
+                      <button class="btn btn-clear" (click)="clearCart()">
+                        Clear Cart
+                      </button>
+                    </td>
+                    <td class="price total-price">
+                      <div class="total-label">Total</div>
+                      <div class="total-amount">{{totalPrice | currency:'USD '}}</div>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="text-center mt-4">
+              <button class="btn btn-checkout">
+                Proceed to Checkout
+              </button>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

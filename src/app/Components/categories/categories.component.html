@@ -1,0 +1,67 @@
+<div class="container py-5">
+  <h2 class="category-title text-center mb-5">
+    {{ categoryName | titlecase }} Products
+  </h2>
+
+  <div *ngIf="isLoading" class="text-center">
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div *ngIf="!isLoading && products.length === 0" class="text-center">
+    <p class="no-products-message">No products available in this category.</p>
+  </div>
+
+  <div *ngIf="!isLoading && products.length > 0" class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let product of products">
+      <div class="card product h-100 border-0 shadow product-card" 
+           (click)="goToProduct(product.id)"
+           tabindex="0">
+        
+        <span class="category-badge">
+          {{ product.category }}
+        </span>
+
+        <div class="img-hover-zoom">
+          <img [src]="product.thumbnail"
+               class="card-img-top"
+               [alt]="product.title"
+               (error)="onImageError($event)">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title"
+              [title]="product.title">
+            {{ product.title }}
+          </h5>
+
+          <p class="card-text">
+            {{ product.description }}
+          </p>
+
+          <div class="mt-auto">
+            <div class="price-container">
+              <span class="price">
+                ${{ product.price }}
+              </span>
+              <span *ngIf="product.discountPercentage" 
+                    class="discount-badge">
+                -{{ product.discountPercentage }}%
+              </span>
+            </div>
+
+            <div class="cart-button-container">
+              <button class="add-to-cart-btn"
+                      (click)="addToCart(product, $event)"
+                      tabindex="0">
+                <i class="bi bi-cart-plus me-2"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+<div *ngIf="product && product.length" class="product-details-container">
+  <div class="product-card-details shadow-lg">
+    <div class="img-side">
+      <div class="carousel-img-wrapper" *ngIf="product[0].images?.length > 0">
+        <button
+          class="carousel-arrow left"
+          (click)="prevImg(product[0].images)"
+          *ngIf="carouselIndex > 0"
+          aria-label="Previous image"
+        >
+          &#8592;
+        </button>
+        <img
+          [src]="mainImg || product[0].images[0]"
+          [alt]="product[0].title || product[0].name"
+          class="main-img"
+        />
+        <button
+          class="carousel-arrow right"
+          (click)="nextImg(product[0].images)"
+          *ngIf="carouselIndex < product[0].images.length - 1"
+          aria-label="Next image"
+        >
+          &#8594;
+        </button>
+      </div>
+      <div
+        class="carousel-indicators-custom"
+        *ngIf="product[0].images?.length > 1"
+      >
+        <span
+          *ngFor="let img of product[0].images; let idx = index"
+          class="carousel-dot"
+          [class.active]="carouselIndex === idx"
+          (click)="goToImg(idx, product[0].images)"
+        ></span>
+      </div>
+    </div>
+    <div class="info-side">
+      <h2 class="product-title">{{ product[0].title || product[0].name }}</h2>
+      <p class="product-desc">{{ product[0].description }}</p>
+      <div class="product-meta">
+        <span class="category">{{ product[0].category }}</span>
+        <span class="brand" *ngIf="product[0].brand"
+          >| {{ product[0].brand }}</span
+        >
+      </div>
+      <div class="product-price">
+        <span class="price">{{ product[0].price }} EGP</span>
+        <span class="discount" *ngIf="product[0].discountPercentage">
+          -{{ product[0].discountPercentage }}%
+        </span>
+      </div>
+      <div class="product-rating">
+        <span class="stars">
+          <ng-container *ngFor="let s of [1, 2, 3, 4, 5]; let i = index">
+            <i
+              class="bi"
+              [ngClass]="
+                i < getRoundedRating(product[0].rating)
+                  ? 'bi-star-fill gold'
+                  : 'bi-star text-white-50'
+              "
+            ></i>
+          </ng-container>
+        </span>
+        <span class="rating-value">{{
+          product[0].rating | number : "1.1-2"
+        }}</span>
+      </div>
+      <button class="add-to-cart-btn mt-4 text-center"(click)="addToCart(product, $event)">
+        <i class="bi bi-cart-plus me-2"></i>
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+<ng-template #loading>
+  <div class="loading-details">Loading...</div>
+</ng-template>

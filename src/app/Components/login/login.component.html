@@ -1,0 +1,76 @@
+<form [formGroup]="logform" (ngSubmit)="onSubmit()">
+  <div class="container my-5 mt-5">
+    <h2 class="text-center mb-4 text-warning">Login</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6 bg-dark p-4 rounded-3 shadow">
+        <div class="mb-3">
+          <label for="email" class="form-label text-warning">Email</label>
+          <input
+            type="email"
+            id="email"
+            formControlName="email"
+            class="form-control bg-dark text-warning border-warning"
+          />
+          <div
+            *ngIf="
+              logform.get('email')?.invalid && logform.get('email')?.touched
+            "
+            class="text-danger small text-center"
+          >
+            Valid email is required. Email must be a valid email address.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label text-warning">Password</label>
+          <div class="d-flex justify-content-between align-items-center">
+            <input
+              [type]="showPassword ? 'text' : 'password'"
+              id="password"
+              formControlName="password"
+              class="form-control bg-dark text-warning border-warning"
+            />
+
+            <button
+              type="button"
+              class="btn btn-warning search m-2"
+              (click)="showPassword = !showPassword"
+              tabindex="-1"
+            >
+              <i
+                class="bi"
+                [ngClass]="showPassword ? 'bi-eye-slash' : 'bi-eye'"
+              ></i>
+            </button>
+          </div>
+          <div
+            *ngIf="
+              logform.get('password')?.invalid &&
+              logform.get('password')?.touched
+            "
+            class="text-danger small text-center"
+          >
+            Password is required and must be at least 6 characters, contain
+            uppercase, lowercase, and a number.
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="text-warning mt-3">
+                Don't have an account? <a class="text-warning gold-link" routerLink="/register">Register</a>
+            </p>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button type="submit" [disabled]="!logform.valid" class="btn search">
+            Login
+            <span *ngIf="isloading"
+              ><i class="fas fa-spin fa-spinner"></i
+            ></span>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</form>

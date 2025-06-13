@@ -1,0 +1,175 @@
+<div class="container py-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="category-title">
+      All Products
+    </h2>
+    <button class="filter-toggle-btn" (click)="toggleFilters()">
+      <i class="bi" [class.bi-funnel-fill]="showFilters" [class.bi-funnel]="!showFilters"></i>
+      Filters
+    </button>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar" [class.show]="showFilters">
+    <div class="filters-container">
+      <!-- Category Filter -->
+      <div class="filter-group">
+        <label>Category</label>
+        <select [(ngModel)]="selectedCategory" (change)="applyFilters()" class="filter-select">
+          <option value="">All Categories</option>
+          <option *ngFor="let category of categories" [value]="category">
+            {{category}}
+          </option>
+        </select>
+      </div>
+
+      <!-- Brand Filter -->
+      <div class="filter-group">
+        <label>Brand</label>
+        <select [(ngModel)]="selectedBrand" (change)="applyFilters()" class="filter-select">
+          <option value="">All Brands</option>
+          <option *ngFor="let brand of brands" [value]="brand">
+            {{brand}}
+          </option>
+        </select>
+      </div>
+
+      <!-- Price Range Filter -->
+      <div class="filter-group">
+        <label>Price Range</label>
+        <div class="price-inputs">
+          <input type="number" 
+                 [(ngModel)]="priceRange.min" 
+                 (change)="applyFilters()"
+                 class="price-input" 
+                 placeholder="Min">
+          <span class="price-separator">to</span>
+          <input type="number" 
+                 [(ngModel)]="priceRange.max" 
+                 (change)="applyFilters()"
+                 class="price-input" 
+                 placeholder="Max">
+        </div>
+      </div>
+
+      <!-- Rating Filter -->
+      <div class="filter-group">
+        <label>Minimum Rating</label>
+        <div class="rating-stars">
+          <i *ngFor="let star of [1,2,3,4,5]" 
+             class="bi" 
+             [class.bi-star-fill]="star <= selectedRating"
+             [class.bi-star]="star > selectedRating"
+             (click)="selectedRating = star; applyFilters()">
+          </i>
+        </div>
+      </div>
+
+      <!-- Reset Filters -->
+      <button class="reset-filters-btn" (click)="resetFilters()">
+        Reset Filters
+      </button>
+    </div>
+
+    <div class="results-count">
+      Showing {{filteredProducts.length}} products
+    </div>
+  </div>
+
+  <div *ngIf="isLoading" class="text-center">
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div *ngIf="!isLoading && displayedProducts.length === 0" class="text-center">
+    <p class="no-products-message">No products match your filters.</p>
+  </div>
+
+  <div *ngIf="!isLoading && displayedProducts.length > 0" class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let product of displayedProducts">
+      <div class="card product h-100 border-0 shadow product-card" 
+           (click)="goToProduct(product.id)"
+           tabindex="0">
+        
+        <span class="category-badge">
+          {{ product.category }}
+        </span>
+
+        <div class="img-hover-zoom">
+          <img [src]="product.thumbnail"
+               class="card-img-top"
+               [alt]="product.title"
+               (error)="onImageError($event)">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title"
+              [title]="product.title">
+            {{ product.title }}
+          </h5>
+
+          <p class="card-text">
+            {{ product.description }}
+          </p>
+
+          <div class="mt-auto">
+            <div class="price-container">
+              <span class="price">
+                ${{ product.price }}
+              </span>
+              <span *ngIf="product.discountPercentage" 
+                    class="discount-badge">
+                -{{ product.discountPercentage }}%
+              </span>
+            </div>
+
+            <div class="rating-container">
+              <div class="stars">
+                <i *ngFor="let star of getRatingStars(product.rating)" 
+                   class="bi" 
+                   [class.bi-star-fill]="star === 1"
+                   [class.bi-star]="star === 0">
+                </i>
+              </div>
+              <span class="rating-value">{{product.rating}}</span>
+            </div>
+
+            <div class="cart-button-container">
+              <button class="add-to-cart-btn"
+                      (click)="addToCart(product, $event)"
+                      tabindex="0">
+                <i class="bi bi-cart-plus me-2"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination-container mt-5" *ngIf="totalPages > 1">
+    <div class="pagination">
+      <button class="page-btn" 
+              [disabled]="currentPage === 1"
+              (click)="goToPage(currentPage - 1)">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <button class="page-btn" 
+              *ngFor="let page of getPageNumbers()"
+              [class.active]="page === currentPage"
+              (click)="goToPage(page)">
+        {{ page }}
+      </button>
+
+      <button class="page-btn" 
+              [disabled]="currentPage === totalPages"
+              (click)="goToPage(currentPage + 1)">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</div>

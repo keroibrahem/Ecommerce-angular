@@ -1,1 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default' as *;
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+
+$main_color: #0aad0a;
+$light_color: #f0f3f2;
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+  rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+  rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+
+$rating_color: #ffc908;
+$main_transition: 0.2s ;
+.encode-sans-semi-expanded-light {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+} 
+
+.text-main{
+    color: $main_color;
+}
+
+.bg-main-light{
+    background-color: $light_color;
+}
+
+.rating-color{
+    color: $rating_color;
+}
+
+.font-sm{
+    font-size: 0.8rem;
+}
+.bg-main{
+    background-color: $main_color;
+}
+
+.main-btn{
+    background-color: $main_color;
+    color: #fff;
+
+    border-radius: 5px;
+    border: unset;
+    cursor: pointer;
+    padding: 4px 10px;
+    transition: all $main_transition ease-in-out;
+    &:disabled{
+        background-color:  #215321;
+        color: #ffffff9c;
+        cursor: not-allowed;
+    }
+    &:hover{
+       background-color:  #3cf43c;
+    }
+}
+
+.product-card{
+    border: 1px solid $main_color;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: $light_color;
+    transition: all $main_transition ease-in-out;
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px, rgba(0, 0, 0, 0.1) 0px 2px 4px;
+        transform: translateY(-5px);
+    }
+}
+
+.gold { color: gold !important; }
+
+button.search.btn {
+  background-color: transparent !important;
+  border: 1px solid gold !important;
+  color: gold !important;
+  font-size: larger;
+  transform: 0.2s !important;
+}
+button.search.btn:focus,
+button.search.btn:active {
+  background-color: transparent !important;
+  border: 1.5px solid gold !important;
+  color: gold !important;
+
+}
+button.search.btn:hover {
+  background-color: rgb(255, 255, 255) !important;
+//   border: 1.5px solid gold !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 217, 0);
+  border-radius: 60px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.56);
+  transform: translateY(-10px) scale(1.18);
+}
+.toast-top-right {
+  z-index: 99999 !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

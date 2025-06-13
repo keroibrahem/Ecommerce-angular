@@ -1,0 +1,33 @@
+<div class="not-found-container">
+    <div class="content">
+      <div class="error-code">
+        <span class="four">4</span>
+        <div class="zero">
+          <div class="coin">
+            <div class="coin-face">
+              <i class="bi bi-cart-x"></i>
+            </div>
+          </div>
+        </div>
+        <span class="four">4</span>
+      </div>
+      
+      <h1 class="title">Oops! Page Not Found</h1>
+      <p class="message">
+        Looks like you've ventured into uncharted territory. 
+        The page you're looking for might have moved or doesn't exist.
+      </p>
+      
+      <button class="home-btn" (click)="goHome()">
+        <i class="bi bi-house-fill"></i>
+        Return to Homepage
+      </button>
+    </div>
+  
+    <!-- Decorative Elements -->
+    <div class="floating-coins">
+      <div class="coin" *ngFor="let i of [1,2,3,4,5]">
+        <div class="coin-face">$</div>
+      </div>
+    </div>
+  </div> 

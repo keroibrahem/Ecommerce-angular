@@ -1,0 +1,16 @@
+
+
+.gold-link {
+  color: gold !important;
+  transition: color 0.2s;
+  max-width: 100% !important;
+  // min-width: 70px !important;
+}
+.gold-link:hover,
+.gold-link.active,
+.gold-link:focus {
+  color: #ffffff !important;
+//   font-family: "Encode Sans Semi Expanded", sans-serif !important;
+  text-decoration: underline;
+}
+

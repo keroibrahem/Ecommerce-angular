@@ -1,0 +1,534 @@
+<section class="py-4 full-vh-section" [class.visible]="topSectionVisible">
+  <div class="container-fluid">
+    <div class="row gx-4 align-items-stretch">
+      <div class="col-lg-9 col-md-8 mb-3">
+        <div
+          id="offersCarousel"
+          class="carousel slide h-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#offersCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Offer 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#offersCarousel"
+              data-bs-slide-to="1"
+              aria-label="Offer 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#offersCarousel"
+              data-bs-slide-to="2"
+              aria-label="Offer 3"
+            ></button>
+          </div>
+          <div
+            class="carousel-inner rounded-4 shadow-lg bg-dark position-relative h-100"
+          >
+            <div class="carousel-item active" data-bs-interval="6000">
+              <div class="banner-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=1200&q=80"
+                  class="banner-img"
+                  alt="Summer Sale"
+                  (error)="onImgError($event)"
+                />
+              </div>
+              <div class="carousel-caption-custom">
+                <h2 class="offer-title">🔥 Summer Sale!</h2>
+                <p class="offer-desc">
+                  Discounts up to <span class="gold-text">50%</span> on all
+                  products.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+              <div class="banner-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80"
+                  class="banner-img"
+                  alt="New Arrivals"
+                  (error)="onImgError($event)"
+                />
+              </div>
+              <div class="carousel-caption-custom">
+                <h2 class="offer-title">🛍️ New Arrivals</h2>
+                <p class="offer-desc">
+                  Discover the latest products with modern designs and high
+                  quality
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+              <div class="banner-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+                  class="banner-img"
+                  alt="Exclusive Offer"
+                  (error)="onImgError($event)"
+                />
+              </div>
+              <div class="carousel-caption-custom">
+                <h2 class="offer-title">🎁 Exclusive Offer</h2>
+                <p class="offer-desc">
+                  Buy 2 products, get the 3rd one free for a limited time!
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#offersCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#offersCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 d-flex flex-column gap-3">
+        <div
+          class="side-offer-img-wrapper flex-fill rounded-4 shadow-lg position-relative overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+            class="side-offer-img"
+            alt="Special Offer"
+            (error)="onImgError($event)"
+          />
+          <div class="side-offer-caption">
+            <span>⚡ Flash Deal!</span>
+          </div>
+        </div>
+        <div
+          class="side-offer-img-wrapper flex-fill rounded-4 shadow-lg position-relative overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+            class="side-offer-img"
+            alt="Limited Time"
+            (error)="onImgError($event)"
+          />
+          <div class="side-offer-caption">
+            <span>⏰ Limited Time!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-4 fade-in-section" [class.visible]="sectionVisible">
+  <h2
+    class="mb-4 text-center m-3 p-4"
+    style="color: gold; letter-spacing: 2px; text-shadow: 0 2px 8px #000"
+  >
+    Popular Categories
+  </h2>
+  <owl-carousel-o [options]="categoryOptions">
+    <ng-container *ngFor="let category of objcategory">
+      <ng-template
+        *ngIf="getProductsByCategory(category.name).length"
+        carouselSlide
+        [id]="category.id.toString()"
+      >
+        <div
+          class="d-flex flex-column align-items-center justify-content-center category-slide"
+
+          (click)="goToCategory(category.name)"
+          >
+          <div class="category-img-wrapper mb-3" >
+          <img
+              [src]="category.image"
+              [alt]="category.name"
+              [title]="category.name"
+              class="category-img"
+              (error)="onImgError($event)"
+            />
+          </div>
+          <h4
+            class="mb-0 text-center"
+            style="
+              color: gold;
+              letter-spacing: 2px;
+              text-shadow: 0 2px 8px #000;
+              font-weight: bold;
+              font-size: 1.2rem;
+            "
+          >
+            {{ category.name }}
+          </h4>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</section>
+
+<section
+  class="py-4 fade-in-section-2"
+  [class.visible]="thirdSectionVisible"
+  *ngIf="categories.length > 0"
+>
+  <h2
+    class="mb-4 text-center m-3 p-4"
+    style="color: gold; letter-spacing: 2px; text-shadow: 0 2px 8px #000"
+  >
+    Popular Products
+  </h2>
+  <div
+    *ngFor="let category of categories"
+    class="mb-5 position-relative p-3 pb-5"
+  >
+    @if (getProductsByCategory(category).length == 0) { } @else {
+
+    <div class="d-flex align-items-center mb-3">
+      <h3
+        class="me-auto"
+        style="color: gold; text-shadow: 0 1px 6px #000; font-size: 2rem"
+      >
+        {{ category }}
+      </h3>
+      <button class="scroll-to-top" (click)="goToCategory(category)">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="slider-container position-relative">
+      <!-- زرار شمال -->
+      <button
+        class="slider-arrow slider-arrow-left"
+        (click)="prev(category)"
+        aria-label="Previous"
+        *ngIf="(categoryIndexes[category] || 0) > 0"
+      >
+        <span>&#8592;</span>
+      </button>
+      <!-- المنتجات -->
+
+      <div
+        class="slider-row-custom d-flex align-items-stretch"
+        [style.transform]="getSliderTransform(category)"
+      >
+        <!-- <div *ngIf=" getProductsByCategory(category).length == 0">
+        <p class="text-center text-warning" style="font-size: 1.2rem; margin: auto;">
+            No products available in this category.
+        </p>
+    </div> -->
+
+        <div
+          #found
+          class="product-card-custom"
+          *ngFor="let product of getProductsByCategory(category)"
+        >
+          <div
+            class="card product h-100 border-0 shadow product-card"
+            (click)="goToProduct(product.id)"
+            style="
+              background: linear-gradient(135deg, #181818 80%, #444 100%);
+              color: #fff;
+              border-radius: 20px;
+              overflow: hidden;
+              position: relative;
+              transition: box-shadow 0.3s, transform 0.3s;
+              min-width: 260px;
+              max-width: 320px;
+              margin: 0 12px;
+              flex: 0 0 300px;
+              box-shadow: 0 2px 16px #000a;
+            "
+            tabindex="0"
+          >
+            <span
+              style="
+                position: absolute;
+                top: 14px;
+                left: 14px;
+                background: #ffffffad;
+                color: gold;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 7px 18px;
+                border-radius: 18px;
+                box-shadow: 0 1px 8px #0002;
+                letter-spacing: 1px;
+                z-index: 2;
+                opacity: 0.95;
+              "
+            >
+              {{ product.category }}
+            </span>
+
+            <div
+              class="img-hover-zoom d-flex align-items-center justify-content-center"
+              style="
+                background: #222;
+                border-bottom: 2px solid gold;
+                min-height: 190px;
+                height: 190px;
+                overflow: hidden;
+              "
+            >
+              <img
+                [src]="product.thumbnail"
+                class="card-img-top p-2 rounded-3 shadow"
+                [alt]="product.title"
+                style="
+                  width: 100%;
+                  max-width: 160px;
+                  height: 160px;
+                  object-fit: contain;
+                  transition: transform 0.5s cubic-bezier(0.4, 2, 0.6, 0.8),
+                    filter 0.4s;
+                  filter: drop-shadow(0 2px 12px #0008);
+                "
+                (error)="onImgError($event)"
+              />
+            </div>
+
+            <div
+              class="card-body d-flex flex-column text-center"
+              style="padding-bottom: 0.5rem"
+            >
+              <h5
+                class="card-title mb-2 text-truncate"
+                [title]="product.title"
+                style="
+                  color: gold;
+                  font-weight: bold;
+                  font-size: 1.13rem;
+                  letter-spacing: 1px;
+                  text-shadow: 0 1px 6px #000;
+                "
+              >
+                {{ product.title | cuttext }}
+              </h5>
+              <p
+                class="card-text mb-2 small"
+                style="
+                  min-height: 40px;
+                  max-height: 48px;
+                  overflow: hidden;
+                  color: #938353;
+                  font-size: 0.97rem;
+                  text-shadow: 0 1px 4px #000;
+                "
+              >
+                {{ product.description }}
+              </p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-3 mt-auto"
+                style="padding-bottom: 0.5rem"
+              >
+                <span class="fw-bold" style="color: gold; font-size: 1.13rem">
+                  ${{ product.price }}
+                </span>
+                <span
+                  class="d-flex align-items-center"
+                  style="color: #ffe082; font-size: 1.08rem"
+                >
+                  <i
+                    class="bi bi-star-fill text-warning ms-1"
+                    style="font-size: 1.2rem; filter: drop-shadow(0 0 4px gold)"
+                  ></i>
+                  {{ product.rating }}
+                </span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 mb-2">
+              <button
+                class="add-to-cart-btn"
+                (click)="addToCart(product, $event)"
+                tabindex="0"
+              >
+                <i class="bi bi-cart-plus me-2"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- زرار يمين -->
+      <button
+        class="slider-arrow slider-arrow-right"
+        (click)="next(category)"
+        aria-label="Next"
+        *ngIf="
+          (categoryIndexes[category] || 0) <
+          getProductsByCategory(category).length - visibleCount
+        "
+      >
+        <span>&#8594;</span>
+      </button>
+    </div>
+    <span
+      style="
+        display: block;
+        height: 1px;
+        width: 50%; /* طول الخط */
+        background: rgba(255, 217, 0, 0.355);
+        border-radius: 2px;
+        margin: 8px 0 0 0; /* مسافة فوق الخط */
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%); /* توسيط الخط */
+        z-index: 1;
+      "
+    >
+    </span>
+    }
+  </div>
+</section>
+<!-- <div class="row g-4 justify-content-center mb-5">
+  <div
+    class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+    *ngFor="let product of  getSampledProductsPerCategory(2)"
+  >
+    <div
+      class="card h-100 border-5 shadow-lg product-card"
+      style="
+      background: linear-gradient(135deg, #181818 80%, #444 100%);
+        color: #fff;
+        border-radius: 18px;
+        overflow: hidden;
+        position: relative;
+      "
+    >
+      <div
+        class="img-hover-zoom d-flex align-items-center justify-content-center"
+        style="
+          background: #222;
+          border-bottom: 2px solid gold;
+          min-height: 190px;
+          height: 190px;
+        "
+      >
+        <img
+          [src]="product.thumbnail"
+          class="card-img-top p-2 rounded-3 shadow"
+          [alt]="product.title"
+          style="
+            width: 100%;
+            max-width: 160px;
+            height: 160px;
+            object-fit: contain;
+            transition: transform 0.4s cubic-bezier(0.4, 2, 0.6, 0.8),
+              filter 0.4s;
+          "
+          (error)="onImgError($event)"
+        />
+      </div>
+      <div class="card-body d-flex flex-column " style="padding-bottom: 0.5rem">
+        <span class="category-badge align-self-center mb-2">
+          {{ product.category }}
+        </span>
+        <h5
+          class="card-title mb-2 text-truncate"
+          [title]="product.title"
+          style="
+            color: gold;
+            font-weight: bold;
+            font-size: 1.08rem;
+            letter-spacing: 1px;
+            text-shadow: 0 1px 6px #000;
+          "
+        >
+          {{ product.title }}
+        </h5>
+        <p
+          class="card-text mb-2"
+          style="
+            height: 40px;
+            overflow: hidden;
+            color: #ffe082;
+            font-size: 0.95rem;
+            text-shadow: 0 1px 4px #000;
+          "
+        >
+          {{ product.description }}
+        </p>
+        <div
+          class="d-flex justify-content-between align-items-center mt-auto"
+          style="padding-bottom: 0.5rem"
+        >
+          <span class="fw-bold" style="color: gold; font-size: 1.1rem">
+            ${{ product.price }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- <div id="offersCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#offersCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Offer 1"></button>
+      <button type="button" data-bs-target="#offersCarousel" data-bs-slide-to="1" aria-label="Offer 2"></button>
+      <button type="button" data-bs-target="#offersCarousel" data-bs-slide-to="2" aria-label="Offer 3"></button>
+    </div>
+    <div class="carousel-inner rounded-4 shadow-lg bg-dark position-relative">
+      <div class="carousel-item active" data-bs-interval="6000">
+        <div class="banner-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=1200&q=80"
+            class="banner-img"
+            alt="Summer Sale"
+            onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder');"
+          />
+        </div>
+        <div class="carousel-caption-custom">
+          <h2 class="offer-title">🔥 Summer Sale!</h2>
+          <p class="offer-desc">Discounts up to<span class="gold-text">50%</span>on all products.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <div class="banner-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80"
+            class="banner-img"
+            alt="New Arrivals"
+            onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder');"
+          />
+        </div>
+        <div class="carousel-caption-custom">
+          <h2 class="offer-title">🛍️ New Arrivals</h2>
+          <p class="offer-desc">Discover the latest products with modern designs and high quality</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <div class="banner-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+            class="banner-img"
+            alt="Exclusive Offer"
+            onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder');"
+          />
+        </div>
+        <div class="carousel-caption-custom">
+          <h2 class="offer-title">🎁 Exclusive Offer</h2>
+          <p class="offer-desc">Buy 2 products, get the 3rd one free for a limited time!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#offersCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#offersCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->

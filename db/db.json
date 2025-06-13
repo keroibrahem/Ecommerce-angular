@@ -1,0 +1,1070 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Essence Mascara Lash Princess",
+      "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+      "category": "beauty",
+      "price": 9.99,
+      "discountPercentage": 10.48,
+      "rating": 2.56,
+      "stock": 99,
+      "brand": "Essence",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Eyeshadow Palette with Mirror",
+      "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+      "category": "beauty",
+      "price": 19.99,
+      "discountPercentage": 18.19,
+      "rating": 2.86,
+      "stock": 34,
+      "brand": "Glamour Beauty",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Powder Canister",
+      "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
+      "category": "beauty",
+      "price": 14.99,
+      "discountPercentage": 9.84,
+      "rating": 4.64,
+      "stock": 89,
+      "brand": "Velvet Touch",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Red Lipstick",
+      "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+      "category": "beauty",
+      "price": 12.99,
+      "discountPercentage": 12.16,
+      "rating": 4.36,
+      "stock": 91,
+      "brand": "Chic Cosmetics",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Red Nail Polish",
+      "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
+      "category": "beauty",
+      "price": 8.99,
+      "discountPercentage": 11.44,
+      "rating": 4.32,
+      "stock": 79,
+      "brand": "Nail Couture",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Calvin Klein CK One",
+      "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+      "category": "fragrances",
+      "price": 49.99,
+      "discountPercentage": 1.89,
+      "rating": 4.37,
+      "stock": 29,
+      "brand": "Calvin Klein",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Chanel Coco Noir Eau De",
+      "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+      "category": "fragrances",
+      "price": 129.99,
+      "discountPercentage": 16.51,
+      "rating": 4.26,
+      "stock": 58,
+      "brand": "Chanel",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Dior J'adore",
+      "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+      "category": "fragrances",
+      "price": 89.99,
+      "discountPercentage": 14.72,
+      "rating": 3.8,
+      "stock": 98,
+      "brand": "Dior",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp"
+    },
+    {
+      "id": "9",
+      "title": "Dolce Shine Eau de",
+      "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+      "category": "fragrances",
+      "price": 69.99,
+      "discountPercentage": 0.62,
+      "rating": 3.96,
+      "stock": 4,
+      "brand": "Dolce & Gabbana",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp"
+    },
+    {
+      "id": "10",
+      "title": "Gucci Bloom Eau de",
+      "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+      "category": "fragrances",
+      "price": 79.99,
+      "discountPercentage": 14.39,
+      "rating": 2.74,
+      "stock": 91,
+      "brand": "Gucci",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Annibale Colombo Bed",
+      "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+      "category": "furniture",
+      "price": 1899.99,
+      "discountPercentage": 8.57,
+      "rating": 4.77,
+      "stock": 88,
+      "brand": "Annibale Colombo",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Annibale Colombo Sofa",
+      "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+      "category": "furniture",
+      "price": 2499.99,
+      "discountPercentage": 14.4,
+      "rating": 3.92,
+      "stock": 60,
+      "brand": "Annibale Colombo",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Bedside Table African Cherry",
+      "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+      "category": "furniture",
+      "price": 299.99,
+      "discountPercentage": 19.09,
+      "rating": 2.87,
+      "stock": 64,
+      "brand": "Furniture Co.",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Knoll Saarinen Executive Conference Chair",
+      "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+      "category": "furniture",
+      "price": 499.99,
+      "discountPercentage": 2.01,
+      "rating": 4.88,
+      "stock": 26,
+      "brand": "Knoll",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Wooden Bathroom Sink With Mirror",
+      "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+      "category": "furniture",
+      "price": 799.99,
+      "discountPercentage": 8.8,
+      "rating": 3.59,
+      "stock": 7,
+      "brand": "Bath Trends",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp"
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Apple",
+      "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
+      "category": "groceries",
+      "price": 1.99,
+      "discountPercentage": 12.62,
+      "rating": 4.19,
+      "stock": 8,
+      "brand": "Fresh Farms",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Beef Steak",
+      "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
+      "category": "groceries",
+      "price": 12.99,
+      "discountPercentage": 9.61,
+      "rating": 4.47,
+      "stock": 86,
+      "brand": "Meat House",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp"
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Cat Food",
+      "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
+      "category": "groceries",
+      "price": 8.99,
+      "discountPercentage": 9.58,
+      "rating": 3.13,
+      "stock": 46,
+      "brand": "Pet Supplies",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp"
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Chicken Meat",
+      "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
+      "category": "groceries",
+      "price": 9.99,
+      "discountPercentage": 13.7,
+      "rating": 3.19,
+      "stock": 97,
+      "brand": "Meat House",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Cooking Oil",
+      "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
+      "category": "groceries",
+      "price": 4.99,
+      "discountPercentage": 9.33,
+      "rating": 4.8,
+      "stock": 10,
+      "brand": "Kitchen Essentials",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp"
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Cucumber",
+      "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
+      "category": "groceries",
+      "price": 1.49,
+      "discountPercentage": 0.16,
+      "rating": 4.07,
+      "stock": 84,
+      "brand": "Fresh Farms",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp"
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Dog Food",
+      "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
+      "category": "groceries",
+      "price": 10.99,
+      "discountPercentage": 10.27,
+      "rating": 4.55,
+      "stock": 71,
+      "brand": "Pet Supplies",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp"
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Eggs",
+      "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
+      "category": "groceries",
+      "price": 2.99,
+      "discountPercentage": 11.05,
+      "rating": 2.53,
+      "stock": 9,
+      "brand": "Farm Fresh",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp"
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Fish Steak",
+      "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
+      "category": "groceries",
+      "price": 14.99,
+      "discountPercentage": 4.23,
+      "rating": 3.78,
+      "stock": 74,
+      "brand": "Seafood Market",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp"
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Green Bell Pepper",
+      "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
+      "category": "groceries",
+      "price": 1.29,
+      "discountPercentage": 0.16,
+      "rating": 3.25,
+      "stock": 33,
+      "brand": "Fresh Farms",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp"
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Green Chili Pepper",
+      "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
+      "category": "groceries",
+      "price": 0.99,
+      "discountPercentage": 1,
+      "rating": 3.66,
+      "stock": 3,
+      "brand": "Fresh Farms",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp"
+      ]
+    },
+    {
+      "id": "27",
+      "title": "Honey Jar",
+      "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
+      "category": "groceries",
+      "price": 6.99,
+      "discountPercentage": 14.4,
+      "rating": 3.97,
+      "stock": 34,
+      "brand": "Bee Natural",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Ice Cream",
+      "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+      "category": "groceries",
+      "price": 5.49,
+      "discountPercentage": 8.69,
+      "rating": 3.39,
+      "stock": 27,
+      "brand": "Sweet Treats",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Juice",
+      "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
+      "category": "groceries",
+      "price": 3.99,
+      "discountPercentage": 12.06,
+      "rating": 3.94,
+      "stock": 50,
+      "brand": "Fresh Drinks",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Kiwi",
+      "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
+      "category": "groceries",
+      "price": 2.49,
+      "discountPercentage": 15.22,
+      "rating": 4.93,
+      "stock": 99,
+      "brand": "Fresh Farms",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"
+      ]
+    },
+    {
+      "id": "31",
+      "title": "Apple MacBook Pro 16-inch",
+      "description": "Apple MacBook Pro 16-inch with Apple M1 Pro chip, 16GB RAM, 512GB SSD, and Liquid Retina XDR display.",
+      "category": "electronics",
+      "price": 2399.99,
+      "discountPercentage": 5,
+      "rating": 4.9,
+      "stock": 25,
+      "brand": "Apple",
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202110_GEO_EMEA_LANG_EN?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1632788574000",
+      "images": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202110_GEO_EMEA_LANG_EN?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1632788574000"
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Samsung Galaxy S22 Ultra",
+      "description": "Samsung Galaxy S22 Ultra 5G, 256GB, 12GB RAM, Phantom Black, 108MP camera.",
+      "category": "electronics",
+      "price": 1199.99,
+      "discountPercentage": 7,
+      "rating": 4.8,
+      "stock": 40,
+      "brand": "Samsung",
+      "thumbnail": "https://images.samsung.com/is/image/samsung/p6pim/levant/2202/gallery/levant-galaxy-s22-ultra-s908-sm-s908ezkgmea-thumb-530594062",
+      "images": [
+        "https://images.samsung.com/is/image/samsung/p6pim/levant/2202/gallery/levant-galaxy-s22-ultra-s908-sm-s908ezkgmea-thumb-530594062"
+      ]
+    },
+    {
+      "id": "33",
+      "title": "Sony WH-1000XM4 Wireless Headphones",
+      "description": "Industry Leading Noise Canceling Overhead Headphones with Mic for Phone-Call and Alexa Voice Control.",
+      "category": "electronics",
+      "price": 349.99,
+      "discountPercentage": 10,
+      "rating": 4.7,
+      "stock": 60,
+      "brand": "Sony",
+      "thumbnail": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg"
+      ]
+    },
+    {
+      "id": "34",
+      "title": "Nike Air Max 270",
+      "description": "Nike Air Max 270 Men's Shoes, Lightweight and comfortable with a large Air unit for cushioning.",
+      "category": "men's clothing",
+      "price": 150,
+      "discountPercentage": 12,
+      "rating": 4.6,
+      "stock": 80,
+      "brand": "Nike",
+      "thumbnail": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ebf6e1b7-2c2e-4b6e-8b7c-7b8e1e5b8e1e/air-max-270-mens-shoes-KkLcGR.png",
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ebf6e1b7-2c2e-4b6e-8b7c-7b8e1e5b8e1e/air-max-270-mens-shoes-KkLcGR.png"
+      ]
+    },
+    {
+      "id": "35",
+      "title": "Adidas Ultraboost 21",
+      "description": "Adidas Ultraboost 21 Running Shoes, Responsive Boost midsole, Primeknit upper.",
+      "category": "men's clothing",
+      "price": 180,
+      "discountPercentage": 15,
+      "rating": 4.5,
+      "stock": 70,
+      "brand": "Adidas",
+      "thumbnail": "https://assets.adidas.com/images/w_600,f_auto,q_auto/8c2b4c2e8e8e4e2e8e8e8e8e8e8e8e8e_9366/Ultraboost_21_Shoes_White_FY0377_01_standard.jpg",
+      "images": [
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/8c2b4c2e8e8e4e2e8e8e8e8e8e8e8e8e_9366/Ultraboost_21_Shoes_White_FY0377_01_standard.jpg"
+      ]
+    },
+    {
+      "id": "36",
+      "title": "Apple Watch Series 7",
+      "description": "Apple Watch Series 7 GPS, 45mm Midnight Aluminum Case with Midnight Sport Band.",
+      "category": "electronics",
+      "price": 429,
+      "discountPercentage": 8,
+      "rating": 4.9,
+      "stock": 35,
+      "brand": "Apple",
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKMX3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1632171069000",
+      "images": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKMX3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1632171069000"
+      ]
+    },
+    {
+      "id": "37",
+      "title": "Canon EOS R5 Camera",
+      "description": "Canon EOS R5 Full-Frame Mirrorless Camera with 8K Video, 45MP, and advanced autofocus.",
+      "category": "electronics",
+      "price": 3899,
+      "discountPercentage": 6,
+      "rating": 4.8,
+      "stock": 10,
+      "brand": "Canon",
+      "thumbnail": "https://m.media-amazon.com/images/I/81rA2B6KzGL._AC_SL1500_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/81rA2B6KzGL._AC_SL1500_.jpg"
+      ]
+    },
+    {
+      "id": "38",
+      "title": "Dell XPS 13 Laptop",
+      "description": "Dell XPS 13 Laptop, 13.4-inch FHD+, Intel Core i7, 16GB RAM, 512GB SSD.",
+      "category": "electronics",
+      "price": 1299.99,
+      "discountPercentage": 9,
+      "rating": 4.7,
+      "stock": 20,
+      "brand": "Dell",
+      "thumbnail": "https://i.dell.com/sites/csimages/Video_Imagery/all/xps-13-9300-laptop-campaign-hero-504x350-ng.psd",
+      "images": [
+        "https://i.dell.com/sites/csimages/Video_Imagery/all/xps-13-9300-laptop-campaign-hero-504x350-ng.psd"
+      ]
+    },
+    {
+      "id": "39",
+      "title": "HP Envy 13 Laptop",
+      "description": "HP Envy 13 Laptop, 13.3-inch FHD, Intel Core i5, 8GB RAM, 256GB SSD.",
+      "category": "electronics",
+      "price": 899.99,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "stock": 18,
+      "brand": "HP",
+      "thumbnail": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06525132.png",
+      "images": [
+        "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06525132.png"
+      ]
+    },
+    {
+      "id": "40",
+      "title": "Logitech MX Master 3 Mouse",
+      "description": "Logitech MX Master 3 Advanced Wireless Mouse, Ultrafast Scrolling, Ergonomic Shape.",
+      "category": "electronics",
+      "price": 99.99,
+      "discountPercentage": 11,
+      "rating": 4.8,
+      "stock": 50,
+      "brand": "Logitech",
+      "thumbnail": "https://resource.logitech.com/w_800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3/gallery/mx-master-3-top-view-graphite.png?v=1",
+      "images": [
+        "https://resource.logitech.com/w_800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3/gallery/mx-master-3-top-view-graphite.png?v=1"
+      ]
+    },
+    {
+      "id": "41",
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "price": 109.95,
+      "discountPercentage": 10,
+      "rating": 3.9,
+      "stock": 120,
+      "brand": "Fjallraven",
+      "thumbnail": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+      ]
+    },
+    {
+      "id": "42",
+      "title": "Mens Casual Premium Slim Fit T-Shirts",
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "category": "men's clothing",
+      "price": 22.3,
+      "discountPercentage": 8,
+      "rating": 4.1,
+      "stock": 259,
+      "brand": "Premium",
+      "thumbnail": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+      ]
+    },
+    {
+      "id": "43",
+      "title": "Mens Cotton Jacket",
+      "description": "Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+      "category": "men's clothing",
+      "price": 55.99,
+      "discountPercentage": 12,
+      "rating": 4.7,
+      "stock": 500,
+      "brand": "Cotton",
+      "thumbnail": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+      ]
+    },
+    {
+      "id": "44",
+      "title": "Mens Casual Slim Fit",
+      "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+      "category": "men's clothing",
+      "price": 15.99,
+      "discountPercentage": 7,
+      "rating": 2.1,
+      "stock": 430,
+      "brand": "Slim Fit",
+      "thumbnail": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+      ]
+    },
+    {
+      "id": "45",
+      "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+      "category": "jewelery",
+      "price": 695,
+      "discountPercentage": 15,
+      "rating": 4.6,
+      "stock": 400,
+      "brand": "John Hardy",
+      "thumbnail": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+      ]
+    },
+    {
+      "id": "46",
+      "title": "Solid Gold Petite Micropave",
+      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "category": "jewelery",
+      "price": 168,
+      "discountPercentage": 10,
+      "rating": 3.9,
+      "stock": 70,
+      "brand": "Hafeez Center",
+      "thumbnail": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+      ]
+    },
+    {
+      "id": "47",
+      "title": "White Gold Plated Princess",
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "category": "jewelery",
+      "price": 9.99,
+      "discountPercentage": 5,
+      "rating": 3,
+      "stock": 400,
+      "brand": "Princess",
+      "thumbnail": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+      ]
+    },
+    {
+      "id": "48",
+      "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+      "category": "jewelery",
+      "price": 10.99,
+      "discountPercentage": 6,
+      "rating": 1.9,
+      "stock": 100,
+      "brand": "Pierced Owl",
+      "thumbnail": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+      ]
+    },
+    {
+      "id": "49",
+      "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0",
+      "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+      "category": "electronics",
+      "price": 64,
+      "discountPercentage": 8,
+      "rating": 3.3,
+      "stock": 203,
+      "brand": "WD",
+      "thumbnail": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+      ]
+    },
+    {
+      "id": "50",
+      "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+      "category": "electronics",
+      "price": 109,
+      "discountPercentage": 7,
+      "rating": 2.9,
+      "stock": 470,
+      "brand": "SanDisk",
+      "thumbnail": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+      ]
+    },
+    {
+      "id": "51",
+      "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+      "category": "electronics",
+      "price": 109,
+      "discountPercentage": 9,
+      "rating": 4.8,
+      "stock": 319,
+      "brand": "Silicon Power",
+      "thumbnail": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
+      ]
+    },
+    {
+      "id": "52",
+      "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+      "category": "electronics",
+      "price": 114,
+      "discountPercentage": 10,
+      "rating": 4.8,
+      "stock": 400,
+      "brand": "WD",
+      "thumbnail": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
+      ]
+    },
+    {
+      "id": "53",
+      "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+      "category": "electronics",
+      "price": 599,
+      "discountPercentage": 11,
+      "rating": 2.9,
+      "stock": 250,
+      "brand": "Acer",
+      "thumbnail": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+      ]
+    },
+    {
+      "id": "54",
+      "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED",
+      "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+      "category": "electronics",
+      "price": 999.99,
+      "discountPercentage": 13,
+      "rating": 2.2,
+      "stock": 140,
+      "brand": "Samsung",
+      "thumbnail": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+      ]
+    },
+    {
+      "id": "55",
+      "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+      "category": "women's clothing",
+      "price": 56.99,
+      "discountPercentage": 8,
+      "rating": 2.6,
+      "stock": 235,
+      "brand": "BIYLACLESEN",
+      "thumbnail": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+      ]
+    },
+    {
+      "id": "56",
+      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+      "category": "women's clothing",
+      "price": 29.95,
+      "discountPercentage": 7,
+      "rating": 2.9,
+      "stock": 340,
+      "brand": "Lock and Love",
+      "thumbnail": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
+      ]
+    },
+    {
+      "id": "57",
+      "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+      "category": "women's clothing",
+      "price": 39.99,
+      "discountPercentage": 6,
+      "rating": 3.8,
+      "stock": 679,
+      "brand": "Rain Jacket",
+      "thumbnail": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
+      ]
+    },
+    {
+      "id": "58",
+      "title": "MBJ Women's Solid Short Sleeve Boat Neck V",
+      "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+      "category": "women's clothing",
+      "price": 9.85,
+      "discountPercentage": 5,
+      "rating": 4.7,
+      "stock": 130,
+      "brand": "MBJ",
+      "thumbnail": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
+      ]
+    },
+    {
+      "id": "59",
+      "title": "Opna Women's Short Sleeve Moisture",
+      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+      "category": "women's clothing",
+      "price": 7.95,
+      "discountPercentage": 6,
+      "rating": 4.5,
+      "stock": 146,
+      "brand": "Opna",
+      "thumbnail": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
+      ]
+    },
+    {
+      "id": "60",
+      "title": "DANVOUY Womens T Shirt Casual Cotton Short",
+      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+      "category": "women's clothing",
+      "price": 12.99,
+      "discountPercentage": 7,
+      "rating": 3.6,
+      "stock": 145,
+      "brand": "DANVOUY",
+      "thumbnail": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+      "images": [
+        "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "johndoe",
+      "name": "John Doe",
+      "age": 30,
+      "email": "john.doe@example.com",
+      "password": "12345678",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": "2",
+      "username": "kero",
+      "name": "Kero",
+      "age": 25,
+      "email": "kero@example.com",
+      "password": "12345678",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": "3",
+      "username": "keroibraheem",
+      "name": "kero",
+      "email": "kero@example.com",
+      "age": 30,
+      "password": "password",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": "c9a3",
+      "username": "kerolos_Ibrahem",
+      "name": "Kerolos Ibrahem Mousa",
+      "age": 23,
+      "email": "keroibrahem51@gmail.com",
+      "password": "Kk1234",
+      "phone": "01278683382"
+    },
+    {
+      "id": "6ae7",
+      "username": "keroibrahem51",
+      "name": "Kerolos ",
+      "age": 33,
+      "email": "keroibrahem51@gmail.com",
+      "password": "Kk1234",
+      "phone": "01278683382"
+    },
+    {
+      "id": "c06e",
+      "username": "kerolos_Ibrahem",
+      "name": "Kerolos Ibrahem Mousa",
+      "age": 23,
+      "email": "keroibrahem21@gmail.com",
+      "password": "Kk1234",
+      "phone": "01278683382"
+    },
+    {
+      "id": "c10c",
+      "username": "kerolos_Ibrahem",
+      "name": "Kerolos Ibrahem Mousa",
+      "age": 23,
+      "email": "keroibrahem@gmail.com",
+      "password": "Kk1234",
+      "phone": "01278683382"
+    },
+    {
+      "id": "9ba0",
+      "username": "kerolos_Ibrahem",
+      "name": "Kerolos Ibrahem Mousa",
+      "age": 23,
+      "email": "keroibrahem551@gmail.com",
+      "password": "Kk1234",
+      "phone": "01278683382"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "beauty",
+      "image": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
+    },
+    {
+      "id": "2",
+      "name": "electronics",
+      "image": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "3",
+      "name": "fragrances",
+      "image": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp"
+    },
+    {
+      "id": "4",
+      "name": "furniture",
+      "image": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp"
+    },
+    {
+      "id": "5",
+      "name": "groceries",
+      "image": "https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"
+    },
+    {
+      "id": "6",
+      "name": "jewelery",
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "7",
+      "name": "men's clothing",
+      "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/8c2b4c2e8e8e4e2e8e8e8e8e8e8e8e8e_9366/Ultraboost_21_Shoes_White_FY0377_01_standard.jpg"
+    },
+    {
+      "id": "8",
+      "name": "women's clothing",
+      "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+    },
+    {
+      "id": "9",
+      "name": "shoes",
+      "image": "https://cdn.dummyjson.com/image/i/products/9/thumbnail.jpg"
+    }
+  ],
+  "ofars": [
+    {
+      "image": "https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=1200&q=80",
+      "title": "🔥 Summer Sale!",
+      "desc": "Discounts up to 50% on all products.",
+      "id": "84d0"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80",
+      "title": "🛍️ New Arrivals",
+      "desc": "Discover the latest products with modern designs and high quality",
+      "id": "9d15"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "title": "🎁 Exclusive Offer",
+      "desc": "Buy 2 products, get the 3rd one free for a limited time!",
+      "id": "6daa"
+    }
+  ],
+  "Cart": []
+}

@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:  #323232 ;
+  
+}
+.container-fluid {
+  padding-top: 55px;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  background: gold;
+  color: #222;
+  border: none;
+  border-radius: 40%;
+  width: 52px;
+  height: 52px;
+  box-shadow: 0 4px 24px #0006;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s, transform 0.4s;
+  transform: scale(0.8);
+}
+.scroll-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+.scroll-to-top:hover {
+  background-color: rgb(255, 255, 255) !important;
+  border: 1.5px solid gold !important;
+  color: gold !important;
+  box-shadow: 0 0 0.2rem rgba(255, 217, 0, 0.463);
+
+}

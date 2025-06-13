@@ -1,0 +1,261 @@
+// Variables
+$gold: #FFD700;
+$dark: #000000;
+$light-gold: rgba($gold, 0.1);
+$dark-gold: darken($gold, 15%);
+$white: #ffffff;
+
+.container {
+  min-height: 80vh;
+}
+
+.card {
+  background-color:#1c1c1c;
+  border: 1px solid $gold;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba($gold, 0.2);
+  
+  .card-header {
+    background: linear-gradient(45deg, $dark-gold, $gold);
+    padding: 1.5rem;
+    
+    h4 {
+      color: $dark;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 1px 2px rgba($dark, 0.2);
+    }
+  }
+
+  .card-body {
+    background-color: $dark;
+    color: $gold;
+  }
+}
+
+.table {
+  color: $gold;
+  border-color: $light-gold;
+  
+  th {
+    color: $gold;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 1rem;
+    border-color: $light-gold;
+    background-color: rgba($dark, 0.5);
+  }
+  
+  td {
+    padding: 1.5rem 1rem;
+    border-color: $light-gold;
+    vertical-align: middle;
+  }
+
+  tbody tr {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: rgba($gold, 0.05);
+      transform: scale(1.01);
+    }
+  }
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid $gold;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba($gold, 0.3);
+  }
+}
+
+.product-details {
+  text-align: left;
+  width: 50%;
+  text-align: center;
+  
+  h6 {
+    color: $gold;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+  
+  small {
+    color: rgba($gold, 0.7);
+  }
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 150px;
+  margin: 0 auto;
+  
+  .form-control {
+    width: 60px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid $gold;
+    color: $gold;
+    padding: 0.5rem;
+    
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($gold, 0.3);
+      border-color: $gold;
+    }
+    
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  
+  .btn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $gold;
+    border-color: $gold;
+    color: $dark;
+    
+    &:hover {
+      background-color: $white;
+      border-color: $white;
+      color: $dark;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.price {
+  color: $gold;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.total-price {
+  .total-label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .total-amount {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+
+.btn-remove {
+  background-color: transparent;
+  border: 1px solid #ff4444;
+  color: #ff4444;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #ff4444;
+    color: $white;
+    transform: scale(1.1);
+  }
+}
+
+.btn-clear {
+  background-color: transparent;
+  border: 1px solid #ff4444;
+  color: #ff4444;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #ff4444;
+    color: $white;
+  }
+}
+
+.btn-checkout {
+  background: $gold;
+  border: none;
+  color: $dark;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem 3rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: $white;
+    color: $dark;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba($gold, 0.3);
+  }
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 3rem;
+  
+  h5 {
+    color: $gold;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: rgba($gold, 0.7);
+  }
+}
+
+// RTL support
+[dir="rtl"] {
+  .me-3 {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+  }
+  
+  .text-end {
+    text-align: left !important;
+  }
+  
+  .card-header:after {
+    background: linear-gradient(to left, transparent, $gold, transparent);
+  }
+}
+
+.card-body,
+.table tr,
+.table td{
+  background-color: #1e1e1e !important;
+}
+.table th,
+.table td {
+  color: $gold !important;
+  border-color: $light-gold;
+}

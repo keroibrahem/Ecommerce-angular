@@ -1,0 +1,334 @@
+.gold-link {
+  color: gold !important;
+  transition: color 0.2s;
+  width: 80px !important;
+  // min-width: 70px !important;
+  text-decoration: underline;
+}
+.gold-link:hover,
+.gold-link.active,
+.gold-link:focus {
+  color: #ffffff !important;
+  font-family: "Encode Sans Semi Expanded", sans-serif !important;
+  text-decoration: underline;
+}
+
+.navbar {
+  background: rgba(24, 24, 24, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  color: gold;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  i {
+    font-size: 1.8rem;
+  }
+
+  &:hover {
+    color: #ffe44d;
+  }
+}
+
+.navbar-toggler {
+  border: 2px solid gold;
+  color: gold;
+  padding: 8px;
+  border-radius: 8px;
+  
+  &:focus {
+    box-shadow: none;
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  
+  &:hover, &.active {
+    color: gold;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: gold;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  &:hover::after, &.active::after {
+    width: 80%;
+  }
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+// Search Styles
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  outline: none;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus {
+    border-color: gold;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+  }
+}
+
+.search-submit {
+  background: gold;
+  border: none;
+  color: #1a1a1a;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+
+  &:hover {
+    background: #ffe44d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// Cart Button
+.cart-btn {
+  color: #fff;
+  font-size: 1.3rem;
+  position: relative;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    color: gold;
+    background: rgba(255, 215, 0, 0.1);
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: gold;
+    color: #1a1a1a;
+    font-size: 0.75rem;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// Profile Button & Dropdown
+.profile-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid gold;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+  background: rgba(24, 24, 24, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  padding: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  
+  .dropdown-item {
+    color: #fff;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    
+    i {
+      color: gold;
+      font-size: 1.1rem;
+    }
+    
+    &:hover {
+      background: rgba(255, 215, 0, 0.1);
+      color: gold;
+    }
+  }
+  
+  .dropdown-divider {
+    border-color: rgba(255, 215, 0, 0.2);
+  }
+}
+
+// Responsive Design
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(24, 24, 24, 0.98);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 1rem;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .cart-btn {
+    width: 100%;
+    border-radius: 8px;
+    justify-content: center;
+    height: auto;
+    padding: 12px;
+    background: rgba(255, 215, 0, 0.1);
+
+    &:hover {
+      background: rgba(255, 215, 0, 0.2);
+    }
+  }
+
+  .profile-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(255, 215, 0, 0.1);
+
+    &::after {
+      content: 'Profile';
+      color: #fff;
+    }
+
+    &:hover {
+      background: rgba(255, 215, 0, 0.2);
+      transform: none;
+    }
+  }
+}
+
+.dropdown {
+  .btn-outline-warning {
+    border-color: gold;
+    
+    &:hover, &:focus {
+      background-color: rgba(255, 215, 0, 0.1);
+    }
+    
+    img {
+      border: 2px solid gold;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: 0.5rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    background-color: #343a40;
+    
+    .dropdown-item {
+      color: #fff;
+      
+      &:hover {
+        background-color: rgba(255, 215, 0, 0.1);
+        color: gold;
+      }
+      
+      i {
+        color: gold;
+      }
+    }
+  }
+}
+
